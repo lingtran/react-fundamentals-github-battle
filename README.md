@@ -1,3 +1,5 @@
+Github Battle app via React Fundamentals
+
 ## Set up
 
 `git clone https://github.com/lingtran/react-fundamentals-github-battle`

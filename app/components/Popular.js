@@ -26,7 +26,7 @@ function RepoGrid (props) {
     <ul className="popular-list">
       {props.repos.map(function (repo, index) {
         return (
-          <li keyp={repo.name} className="popular-item">
+          <li key={repo.name} className="popular-item">
             <div className="popular-rank">#{index+1}</div>
             <ul className="space-list-items">
               <li>
@@ -38,7 +38,7 @@ function RepoGrid (props) {
               </li>
               <li><a href={repo.html_url}>{repo.name}</a></li>
               <li>@{repo.owner.login}</li>
-              <li>{repo.stargazers+count} stars</li>
+              <li>{repo.stargazers_count} stars</li>
             </ul>
           </li>)
       })}
